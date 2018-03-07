@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+//    id 'jacoco'
+}
+
+compileJava.options.encoding = 'utf-8'
+compileTestJava.options.encoding = 'utf-8'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//jacocoTestReport {
+//    reports {
+//        html.enabled true
+//        xml.enabled false
+//    }
+//}
+
+mainClassName = 'App'
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.20'
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+}
